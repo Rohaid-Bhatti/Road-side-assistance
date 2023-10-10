@@ -1,0 +1,72 @@
+name: home_hub
+description: home services app
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cloud_firestore: ^4.4.5
+  firebase_core: ^2.8.0
+  firebase_auth: ^4.3.0
+  firebase_storage: ^11.1.0
+  fluttertoast: ^8.2.1
+  get: ^4.6.5
+  image_picker: ^0.8.7+1
+  provider: ^6.0.5
+  geolocator: ^9.0.2
+  google_maps_flutter: ^2.2.8
+  permission_handler: ^10.2.0
+  flutter_profile_picture: ^2.0.0
+  url_launcher: ^6.1.11
+  app_settings: ^5.0.0
+  firebase_messaging: ^14.6.5
+  flutter_local_notifications: ^15.1.0+1
+  http: ^1.1.0
+
+  #For Dot indicator in pageView
+  smooth_page_indicator: ^1.0.0+2
+
+  #For Star rating
+  smooth_star_rating_null_safety: ^1.0.4+2
+
+  #For Country code picker
+  country_calling_code_picker: ^2.0.1
+
+  intl: ^0.17.0
+
+  #mobX
+  mobx:
+  flutter_mobx:
+
+  #shared preference
+  shared_preferences: ^2.0.15
+
+  cupertino_icons: ^1.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
+  build_runner:
+  mobx_codegen:
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
